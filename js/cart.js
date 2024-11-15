@@ -1,4 +1,4 @@
-import { getCart, saveCart, removeFromCart } from "./localStorageUtils.js";
+import { getCart, saveCart, removeFromCart } from "../utils/localStorageUtils.js";
 
 let productToRemove = null;
 

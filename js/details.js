@@ -1,6 +1,6 @@
 import { getProductById } from "../api/products.js";
 import { mapProductToDetailsCard } from "../utils/layout.js";
-import { addToCart } from "./localStorageUtils.js";
+import { addToCart } from "../utils/localStorageUtils.js";
 
 document.addEventListener("DOMContentLoaded", async () => {
   const params = new URLSearchParams(window.location.search);
