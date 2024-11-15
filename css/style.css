@@ -63,6 +63,10 @@ body {
   padding: 5px 10px;
 }
 
+.products {
+  margin: 20px;
+}
+
 .card {
   background-color: white;
   height: 300px;
