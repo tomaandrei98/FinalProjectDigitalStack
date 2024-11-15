@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar flex-row bg-white justify-around items-center">
+        <div class="logo">
+          <a href="../index.html">
+            <img
+              src="https://thumbs.dreamstime.com/b/gramophone-icon-music-store-label-logo-music-shop-emblem-vector-gramophone-icon-music-store-label-logo-music-shop-emblem-vector-115579145.jpg"
+              width="100px"
+            />
+          </a>
+        </div>
+        <div class="nav-links">
+          <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
+        </div>
+      </div>
+      <div class="products flex-wrap flex-row gap-20"></div>
+    </div>
+    <div class="container">
+      <h1>Your Cart</h1>
+      <div id="alert" class="hidden"></div>
+
+      <table id="cart-table">
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="cart-items"></tbody>
+      </table>
+
+      <div id="cart-summary">
+        <p><strong>Total: </strong><span id="cart-total">0</span> RON</p>
+        <button id="clear-cart">Clear Cart</button>
+      </div>
+    </div>
+
+    <div id="confirmation-modal" class="modal">
+      <div class="modal-content">
+        <h2>Are you sure?</h2>
+        <p>Do you want to remove this product from the cart?</p>
+        <button id="confirm-remove" class="btn">Yes, Remove</button>
+        <button id="cancel-remove" class="btn">Cancel</button>
+      </div>
+    </div>
+
+    <script type="module" src="../utils/cart.js"></script>
+  </body>
+</html>

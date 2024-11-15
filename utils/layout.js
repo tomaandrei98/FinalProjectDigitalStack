@@ -8,9 +8,9 @@ export function mapProductToCard(product) {
                 <div class="name">
                     <h4>${product.name}</h4>
                 </div>
-                <div class="price">${product.price} lei</div>
+                <div class="price">${product.price} RON</div>
             </div>
-            <button class="add-to-cart">Adauga in cos</button>
+             <button class="details-btn" data-id="${product.id}">Details</button>
         </div>
     `;
 }
@@ -30,4 +30,21 @@ export function mapProductToAdminTableRow(product) {
             </td>
         </tr>
     `;
+}
+
+export function mapProductToDetailsCard(product) {
+  return `
+    <div class="details-card card flex-row items-center gap-20">
+        <div class="img">
+            <img src="${product.imageURL}" alt="${product.name}" />
+        </div>
+        <div class="info flex-col items-start gap-10">
+            <h2>${product.name}</h2>
+            <p>${product.details}</p>
+            <p>Price: ${product.price} RON</p>
+            <p>In Stock: ${product.stock}</p>
+            <button id="add-to-cart" class="details-btn add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+  `;
 }

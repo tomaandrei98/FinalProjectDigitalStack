@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Details</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar flex-row bg-white justify-around items-center">
+        <div class="logo">
+          <a href="../index.html">
+            <img
+              src="https://thumbs.dreamstime.com/b/gramophone-icon-music-store-label-logo-music-shop-emblem-vector-gramophone-icon-music-store-label-logo-music-shop-emblem-vector-115579145.jpg"
+              width="100px"
+            />
+          </a>
+        </div>
+        <div class="nav-links">
+          <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
+        </div>
+      </div>
+      <div class="products flex-wrap flex-row gap-20"></div>
+    </div>
+    <div class="container">
+      <div id="alert" class="hidden"></div>
+      <div id="product-details" class="flex-col items-center gap-20"></div>
+    </div>
+    <script type="module" src="../utils/details.js"></script>
+  </body>
+</html>
